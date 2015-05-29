@@ -1,0 +1,784 @@
+body, html{
+    width: 100%;
+}
+
+
+
+/* ----------------------------------------------------- FONT ----------------------------------------------------- */
+
+@font-face {
+    font-family: 'aleo-bold';
+    src: url('../font/aleo/aleo-bold-webfont.eot');
+    src: url('../font/aleo/aleo-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/aleo/aleo-bold-webfont.woff') format('woff'),
+         url('../font/aleo/aleo-bold-webfont.ttf') format('truetype'),
+         url('../font/aleo/aleo-bold-webfont.svg#aleo-bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'aleo-light';
+    src: url('../font/aleo/aleo-light-webfont.eot');
+    src: url('../font/aleo/aleo-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/aleo/aleo-light-webfont.woff') format('woff'),
+         url('../font/aleo/aleo-light-webfont.ttf') format('truetype'),
+         url('../font/aleo/aleo-light-webfont.svg#aleo-light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'aleo-regular';
+    src: url('../font/aleo/aleo-regular-webfont.eot');
+    src: url('../font/aleo/aleo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/aleo/aleo-regular-webfont.woff') format('woff'),
+         url('../font/aleo/aleo-regular-webfont.ttf') format('truetype'),
+         url('../font/aleo/aleo-regular-webfont.svg#aleo-regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+    }
+
+
+        @font-face {
+            font-family: 'lato-light';
+            src: url('../font/lato/lato-light-webfont.eot');
+            src: url('../font/lato/lato-light-webfont.eot?#iefix') format('embedded-opentype'),
+                 url('../font/lato/lato-light-webfont.woff') format('woff'),
+                 url('../font/lato/lato-light-webfont.ttf') format('truetype'),
+                 url('../font/lato/lato-light-webfont.svg#lato-light') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'lato';
+            src: url('../font/lato/lato-regular-webfont.eot');
+            src: url('../font/lato/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+                 url('../font/lato/lato-regular-webfont.woff') format('woff'),
+                 url('../font/lato/lato-regular-webfont.ttf') format('truetype'),
+                 url('../font/lato/lato-regular-webfont.svg#lato-regular') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+
+        @font-face {
+            font-family: 'lato-bold';
+            src: url('../font/lato/lato-bold-webfont.eot');
+            src: url('../font/lato/lato-bold-webfont.eot?#iefix') format('embedded-opentype'),
+                 url('../font/lato/lato-bold-webfont.woff') format('woff'),
+                 url('../font/lato/lato-bold-webfont.ttf') format('truetype'),
+                 url('../font/lato/lato-bold-webfont.svg#lato-bold') format('svg');
+            font-weight: normal;
+            font-style: normal;
+
+        }
+
+
+
+        @font-face {
+            font-family: 'lato-black';
+            src: url('../font/lato/lato-black-webfont.eot');
+            src: url('../font/lato/lato-black-webfont.eot?#iefix') format('embedded-opentype'),
+                 url('../font/lato/lato-black-webfont.woff') format('woff'),
+                 url('../font/lato/lato-black-webfont.ttf') format('truetype'),
+                 url('../font/lato/lato-black-webfont.svg#lato-black') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+/* ----------------------------------------------------- END FONT ----------------------------------------------------- */
+
+
+
+
+body{
+    font-family: lato, sans-serif;
+    font-size: 18px;
+}
+
+.clearfix:after{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+h1{
+    padding: 20px 0;
+    font-size: 36px;
+    text-align: center;
+      margin-top: 50px;
+}
+
+h2{
+    font-size: 24px;
+}
+
+h3{
+    font-size: 18px;
+    font-family: 'lato-light';
+    text-align: center;
+}
+
+#content-header{
+      -webkit-box-shadow: inset 0 -6px 2px -6px #aaa;
+  -moz-box-shadow: inset 0 -6px 2px -6px #aaa;
+  -ms-box-shadow: inset 0 -6px 2px -6px #aaa;
+  box-shadow: inset 0 -6px 2px -6px #aaa;
+}
+
+#container{
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 80px;
+  padding-top: 30px;
+  background-color: #fafafa;
+}
+
+.content_inner{
+      margin: 0 auto;
+  width: 85%;
+  max-width: 1280px;
+}
+
+section{
+
+}
+
+#connexion h1,#connexion h2,#connexion h3{
+
+}
+
+.displayblock{
+    display: block;
+}
+
+.displaynone{
+    display: none;
+}
+
+
+
+/* ----------------------------------------------------- BOUTON ----------------------------------------------------- */
+
+.button {
+    font-family: lato-bold;
+    padding: 17px 60px;
+    text-align: center;
+    border: 3px solid white;
+    color: white;
+    cursor: pointer;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    text-transform: uppercase;
+    font-size: 1.0rem;
+  }
+
+
+.button:hover {
+    background:white;
+  color:#19bec0;
+}
+
+.bouton_bleu{
+    border: 3px solid #19bec0;
+    color: #19bec0;
+}
+
+.bouton_bleu:hover{
+    border: 3px solid #19bec0;
+    background: #19bec0;
+    color: white;
+}
+
+
+
+
+#bouton-home{
+    margin-top: 30px;
+}
+
+
+/* ----------------------------------------------------- END BOUTON ----------------------------------------------------- */
+
+
+
+ 
+
+
+/* ----------------------------------------------------- LOGO ----------------------------------------------------- */
+
+
+
+
+#logo{
+
+    margin: 0 auto;
+    margin-top: 25px;
+    font-family:lato;
+    margin-top: 10px;
+}
+
+    
+
+
+#logo img{
+
+    /*position: relative;
+    z-index: 1000;*/
+    width: 200px;
+    /*margin-left: -25px;
+    display: block;*/
+}
+
+
+
+
+#logo a > span{
+    display: block;
+    position: relative;
+    padding-top: 10px; 
+}
+
+.color-span{
+       color:#19bec0;
+    }
+
+#logo a{
+    border-bottom: none;
+    color: #666;
+}
+
+
+
+
+/* ----------------------------------------------------- END LOGO ------------------------------------------------- */
+
+
+
+
+*{
+box-sizing: border-box;
+}
+
+form{
+    margin-top: 50px;
+}
+
+form input{
+    width: 100%;
+    border: 1px solid #aaa;
+    background: white;
+    color: #19bec0;
+    padding: 10px;
+    font-size: 18px;
+}
+
+form input:focus{
+    border: 1px solid #19bec0;
+    background: white;
+    color: #19bec0;
+}
+
+form input[type="submit"]{
+    width: 100%;
+    border: 1px solid #19bec0;
+    background: white;
+    color: #19bec0;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form input[type="submit"]:hover{
+    border: 2px solid #19bec0;
+    background: #19bec0;
+    color: white;
+}
+
+
+
+
+
+
+
+form label{
+    display: block;
+      margin-left: 10px;
+}
+
+form ol li{
+    margin-top: 15px;
+}
+
+form .error_message{
+    margin-top: 15px;
+    color: #e04c28;
+}
+
+
+
+#connexion, #profil, #modification{
+    padding: 50px;
+}
+
+#connexion{
+      float: left;
+  width: 100%;
+}
+
+#connexion h2{
+    text-align: center;
+      width: 45%;
+        margin-left: 5%;
+}
+
+#connexion h2:nth-of-type(2){
+  margin-top: -40px;
+    margin-left: 5%;
+  float: left;
+}
+
+#connexion section{
+      float: left;
+  margin-left: 5%;
+    width: 45%;
+}
+
+#profil{
+    display: block;
+}
+
+#btn-modification{
+      margin: 0 auto;
+  text-align: center;
+  float: none!important;
+}
+
+#profil h2 + a,
+#profil h2 + a + a{
+    float: right;
+}
+#profil h2 + a + a{
+    clear: both;
+}
+
+#profil h2 + a:hover,
+#profil h2 + a + a:hover{
+    color: #de4c27;
+}
+
+
+.Bienvenue_profil{
+      text-align: center;
+  margin-bottom: 20px;
+}
+
+#profil ol{
+     width: 50%;
+  margin: 0 auto;
+  border: 2px solid #19bec0;
+  padding: 20px 30px;
+}
+
+#profil ol li{
+ border-bottom: solid 1px #aaa;
+  margin: 5px 0;    
+}
+
+#profil ol li p:last-child{
+ float: right;   
+}
+
+#profil ol li:last-child{
+ border-bottom: none;
+  margin: 5px 0;    
+}
+  
+
+#profil ol li p,
+#modification li label{
+    display: inline-block;
+    width: auto;
+}
+
+#profil ol li:first-child{
+
+}
+
+
+#profil ol + h3 a{
+    float: left;
+    border: 2px solid #19bec0;
+    background: white;
+    color: #19bec0;
+    padding: 15px 20px;
+    clear: both;
+    cursor: pointer;
+    font-family: 'lato-light';
+    margin-top: 40px;
+}
+
+#profil ol + h3 a:hover{
+    border: 2px solid #19bec0;
+    background: #19bec0;
+    color: white;
+}
+
+#profil .deco_delete{
+  text-align: center;
+  display: block;
+  margin-top: 50px;
+}
+
+#profil .deco_delete:last-child{
+  margin-top: 20px;
+}
+
+
+#profil .deco_delete:hover{
+  color: red;
+}
+
+
+#modification,
+#confirm{
+    display: none;
+}
+
+#modification input[type="file"]{
+    border: none;
+    padding: inherit;
+    width: 100%;
+}
+
+#modification li label,
+#modification li input{
+    display: block;
+}
+
+#modification li:first-of-type{
+    /*float: left;
+    width: 40%;
+    margin: 0 50px 370px 0;*/
+}
+
+#modification li input{
+    width: 100%;
+}
+
+#modification li:last-of-type{
+    position: relative;
+}
+
+#modification li input[type="submit"]{
+
+}
+
+#modification li:last-of-type{
+    margin-top: 50px;
+}
+
+#no, #delete{
+    cursor: pointer;
+}
+
+#background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: -1;
+    opacity: 0;
+}
+
+#confirm{
+  position: absolute;
+  top: 30%;
+  margin: 0 auto;
+  border: 2px solid #19bec0;
+  padding: 25px;
+  background: white;
+  width: 300px;
+  left: 50%;
+  margin-left: -150px;
+  -webkit-box-shadow: 0px 0px 300px 1000px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 0px 300px 1000px rgba(0,0,0,0.5);
+box-shadow: 0px 0px 300px 1000px rgba(0,0,0,0.5);
+}
+
+.retour_landing{
+    border: 2px solid #19bec0;
+  background: white;
+  color: #19bec0;
+  text-align: center;
+  width: 230px;
+  position: absolute;
+  left: 50%;
+  margin-left: -115px;
+  margin-top: 25px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.retour_landing:hover{
+  background: #19bec0;
+  color: white;
+}
+
+#confirm p{
+    margin-bottom: 25px;
+}
+
+#confirm h3{
+    width: 100px;
+    display: inline-block;
+}
+
+#confirm  #yes,
+#confirm  #no{
+    text-transform: uppercase;
+    padding: 25px;
+}
+
+#confirm #yes{
+    color: #fff;
+}
+
+#confirm  #btn-y{
+    border: 2px solid #19bec0;
+    background: #19bec0;
+    margin-right: 25px;
+}
+
+#confirm  #btn-y:hover{
+    border: 2px solid #c0202a;
+    background: #c0202a;
+}
+
+#confirm  #btn-n{
+    border: 2px solid #333;
+}
+#confirm  #btn-n:hover{
+    border: 2px solid #20bcd8;
+}
+
+#confirm div{
+    text-align: center;
+}
+
+
+/* footer ---------------------------------------------------------------*/
+
+
+footer{
+    clear: both;
+    height: 65px;
+    background-color: white;
+    font-size: 15px;
+    font-family: lato-light;
+
+      -webkit-box-shadow: inset 0 6px 2px -6px #aaa;
+  -moz-box-shadow: inset 0 6px 2px -6px #aaa;
+  box-shadow: inset 0 6px 2px -6px #aaa;
+}
+
+footer a:hover {
+    border-bottom: none;
+}
+    .content-footer{
+        width: 85%;
+        max-width: 960px;
+        margin:0 auto;
+          padding-top: 11px;
+    }
+
+    .content-footer ul{
+        list-style-type:none;
+    }
+
+    footer ul li a{
+        border: none;
+    }
+
+
+
+.social-ul{
+    margin: 0 auto;
+    margin-top: 10px;
+    float: right;
+}
+
+.social-ul li{
+    display: inline-block;
+    margin: 0 9px;
+    font-family: lato-light, sans-serif;
+    line-height:1.8rem;
+}
+
+.social-ul li:nth-child(6) {
+margin: 0 0 0 9px;
+}
+
+.social-ul li:nth-child(1), .social-ul li:nth-child(2), .social-ul li:nth-child(3), .social-ul li:nth-child(4), .social-ul li:nth-child(5){
+    cursor: url("../img/externallink.png"), pointer;
+}
+
+
+.social-ul li:nth-child(1) a {
+  background: url('../img/sprite-social.png') no-repeat 0 0;
+    width: 20px;
+    height: 15px;
+}
+.social-ul li:nth-child(2) a {
+  background: url('../img/sprite-social.png') no-repeat 25% 0;
+    width: 19px;
+    height: 15px;
+}
+.social-ul li:nth-child(3) a {
+  background: url('../img/sprite-social.png') no-repeat 49.686% 0;
+    width: 16px;
+    height: 15px;
+}
+.social-ul li:nth-child(4) a {
+  background: url('../img/sprite-social.png') no-repeat 73.75% 0;
+    width: 15px;
+    height: 15px;
+}
+.social-ul li:nth-child(5) a {
+  background: url('../img/sprite-social.png') no-repeat 100% 0;
+    width: 23px;
+    height: 15px;
+}
+
+.social-ul li:nth-child(1):hover a, .social-ul li:nth-child(2):hover a, .social-ul li:nth-child(3):hover a, .social-ul li:nth-child(4):hover a, .social-ul li:nth-child(5):hover a{
+    cursor: url("../img/externallink.png"), pointer;
+}
+
+
+.social-ul li:nth-child(1):hover a{
+    background: url('../img/sprite-social.png') no-repeat 0 100%;
+    width: 20px;
+    height: 15px;
+}
+
+.social-ul li:nth-child(2):hover a{
+    background: url('../img/sprite-social.png') no-repeat 25% 100%;
+    width: 19px;
+    height: 15px;
+}
+
+.social-ul li:nth-child(3):hover a{
+    background: url('../img/sprite-social.png') no-repeat 49.686% 100%;
+    width: 16px;
+    height: 15px;
+}
+
+.social-ul li:nth-child(4):hover a{
+    background: url('../img/sprite-social.png') no-repeat 73.75% 100%;
+    width: 15px;
+    height: 15px;
+}
+
+.social-ul li:nth-child(5):hover a{
+    background: url('../img/sprite-social.png') no-repeat 100% 100%;
+    width: 23px;
+    height: 15px;
+}
+
+.social-ul li:nth-child(1) a, .social-ul li:nth-child(2) a, .social-ul li:nth-child(3) a, .social-ul li:nth-child(4) a, .social-ul li:nth-child(5) a{
+    display:inline-block;
+    text-indent: -9999px;
+
+}
+
+
+
+
+/* end footer ---------------------------------------------------------------*/
+
+
+
+@media screen and (max-width: 800px) {
+
+
+footer{
+        text-align: center;
+        height: 130px;
+    }
+
+    .social-ul{
+    float: none;
+    margin-top: 34px;
+    margin-bottom: 20px;
+    }
+
+    .social-ul::after{
+        content: "";
+        width: 120px;
+        border-bottom:1px dotted #A67F4E;
+        display: block;
+        margin: 18px auto 0;
+    }
+
+}
+
+
+
+@media screen and (max-width: 750px) {
+
+    #profil ol {
+      width: 100%;
+    }
+
+    #profil ol li p:last-child{
+     float: none;   
+    }
+
+    #connexion, #profil, #modification {
+       padding: 0px; 
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 700px) {
+
+    #connexion section{
+        float: none;
+        margin-left: 0;
+        width: 100%;
+
+    }
+
+    #connexion h2 {
+      text-align: center;
+      width: 100%;
+        margin-left: 0;
+    }
+
+    #connexion h2:nth-of-type(2) {
+      margin-top: 90px;
+      margin-left: 0;
+      float: none;
+      width: 100%;
+    }
+
+    
+
+
+}
