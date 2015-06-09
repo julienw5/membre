@@ -1,5 +1,4 @@
 <?php
-
     if($_POST['submit_in'] == true){
         $pseudo_in = trim(strip_tags($_POST['pseudo']));
         $prenom_in = trim(strip_tags($_POST['prenom_in']));
@@ -113,15 +112,6 @@
             }
         }
 
-
-
-
-
-
-
-
-
-
 //UPDATE
 
     if($_POST['modify'] == true){
@@ -156,16 +146,10 @@
         
         //Comparaison pseudo
         //Récupérer pseudo
-        $query = "  SELECT pseudo, email
-                    FROM membre
-                    WHERE pseudo = :pseudo || email = :email
-                    LIMIT 2";
+        $query = "  SELECT pseudo, email FROM membre WHERE pseudo = :pseudo || email = :email LIMIT 2";
         //Préparer lecture
         $preparedStatement = $db->prepare($query);
-        $preparedStatement->execute(array(
-                                    ':pseudo' => $pseudo_modification,
-                                    ':email' => $email_modification
-                                    ));
+        $preparedStatement->execute(array( ':pseudo' => $pseudo_modification, ':email' => $email_modification ));
         //Lire
         $result = $preparedStatement->fetchAll();
 
@@ -200,22 +184,9 @@
         }
         if(count($errors) == 0){
             //Ecrire
-            $query = "  UPDATE membre
-                        SET pseudo = :pseudo,
-                            prenom = :prenom,
-                            nom = :nom,
-                            email = :email,
-                            mdp = :mdp
-                        WHERE id = :id ";
+            $query = "  UPDATE membre SET pseudo = :pseudo, prenom = :prenom, nom = :nom, email = :email, mdp = :mdp WHERE id = :id ";
             //Executer écriture
-            $params = array(
-                        ':pseudo' => $pseudo_modification,
-                        ':prenom' => $prenom_modification,
-                        ':nom' => $nom_modification,
-                        ':email' => $email_modification,
-                        ':mdp' => $mdp_modification,
-                        ':id' => $id
-                    );
+            $params = array( ':pseudo' => $pseudo_modification, ':prenom' => $prenom_modification, ':nom' => $nom_modification, ':email' => $email_modification, ':mdp' => $mdp_modification, ':id' => $id );
             $preparedStatement = $db->prepare($query);
             $preparedStatement->execute($params);
 

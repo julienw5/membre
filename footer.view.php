@@ -18,9 +18,5 @@
         </div>
         <!--END content-footer -->
     </footer>
-    
-    
-    
-
 </body>
 </html>

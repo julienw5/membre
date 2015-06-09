@@ -11,7 +11,6 @@
         $mdpInit = $result['mdp'];
         $id = $result['id'];
 ?>
-
 <section id="profil" class="clearfix">
     <h2 class="Bienvenue_profil">Bienvenue sur votre profil <?php echo $user ?></h2>
     <ol class="clearfix">

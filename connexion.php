@@ -24,7 +24,8 @@
             </li>
         </ol>
     </form>
-</section>    <h2>Inscrivez-vous</h2>
+</section>    
+<h2>Inscrivez-vous</h2>
     <!-- <h3>Pour gérer votre compte et être tenu au courant des nouveautés</h3> -->
 <section>
     <form method="POST">

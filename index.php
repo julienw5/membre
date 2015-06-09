@@ -24,9 +24,7 @@ switch ($_GET['page']){
 
 		case 'delete':
 				$user = $_SESSION['user'];
-				$query = "  DELETE 
-				            FROM membre
-				            WHERE pseudo = :pseudo";
+				$query = "  DELETE FROM membre WHERE pseudo = :pseudo";
 
 				//Préparer lecture
 				$preparedStatement = $db->prepare($query);
