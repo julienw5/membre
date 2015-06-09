@@ -47,7 +47,7 @@
             <div id="content-header">
                 <!-- LIEN LOGO -->
                 <h1 id="logo">
-                    <a href="aeria-app/iframe.html">
+                    <a href="../index.html">
                         <img src="img/aeria-app.svg" alt="logo de l'application aeria-app">
                     </a>
                 </h1>
